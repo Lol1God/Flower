@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F21F55F-A94E-4FA0-8C63-4E33DA0F4CBC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kyrsach</RootNamespace>
+    <AssemblyName>flower</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>flower.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\FormPokupateli\FormChengePokupateli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPokupateli\FormChengePokupateli.Designer.cs">
+      <DependentUpon>FormChengePokupateli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPokupateli\FormPokupateli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPokupateli\FormPokupateli.Designer.cs">
+      <DependentUpon>FormPokupateli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPokupateli\FormAddPokupateli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPokupateli\FormAddPokupateli.Designer.cs">
+      <DependentUpon>FormAddPokupateli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormAddProduct.Designer.cs">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormChengeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormChengeProduct.Designer.cs">
+      <DependentUpon>FormChengeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormProducts\FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormAddSdelka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormAddSdelka.Designer.cs">
+      <DependentUpon>FormAddSdelka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormChengeSdelka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormChengeSdelka.Designer.cs">
+      <DependentUpon>FormChengeSdelka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormSdelka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSdelka\FormSdelka.Designer.cs">
+      <DependentUpon>FormSdelka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormAddSotrud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormAddSotrud.Designer.cs">
+      <DependentUpon>FormAddSotrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormChengeRabotnik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormChengeRabotnik.Designer.cs">
+      <DependentUpon>FormChengeRabotnik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormSotrudniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSotrudniki\FormSotrudniki.Designer.cs">
+      <DependentUpon>FormSotrudniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klass\Bank.cs" />
+    <Compile Include="Klass\BD.cs" />
+    <Compile Include="Klass\ThemeColor.cs" />
+    <Compile Include="Magazin_cvetovDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazin_cvetovDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin_cvetovDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazin_cvetovDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin_cvetovDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazin_cvetovDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin_cvetovDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazin_cvetovDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Magazin_cvetovDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Magazin_cvetovDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormPokupateli\FormAddPokupateli.resx">
+      <DependentUpon>FormAddPokupateli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPokupateli\FormChengePokupateli.resx">
+      <DependentUpon>FormChengePokupateli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPokupateli\FormPokupateli.resx">
+      <DependentUpon>FormPokupateli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProducts\FormAddProduct.resx">
+      <DependentUpon>FormAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProducts\FormChengeProduct.resx">
+      <DependentUpon>FormChengeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormProducts\FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSdelka\FormAddSdelka.resx">
+      <DependentUpon>FormAddSdelka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSdelka\FormChengeSdelka.resx">
+      <DependentUpon>FormChengeSdelka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSdelka\FormSdelka.resx">
+      <DependentUpon>FormSdelka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSotrudniki\FormAddSotrud.resx">
+      <DependentUpon>FormAddSotrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSotrudniki\FormChengeRabotnik.resx">
+      <DependentUpon>FormChengeRabotnik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSotrudniki\FormSotrudniki.resx">
+      <DependentUpon>FormSotrudniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Magazin_cvetovDataSet.xsc">
+      <DependentUpon>Magazin_cvetovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazin_cvetovDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazin_cvetovDataSet.xss">
+      <DependentUpon>Magazin_cvetovDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet1.xsc">
+      <DependentUpon>Magazin_cvetovDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazin_cvetovDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazin_cvetovDataSet1.xss">
+      <DependentUpon>Magazin_cvetovDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet2.xsc">
+      <DependentUpon>Magazin_cvetovDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazin_cvetovDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazin_cvetovDataSet2.xss">
+      <DependentUpon>Magazin_cvetovDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet3.xsc">
+      <DependentUpon>Magazin_cvetovDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazin_cvetovDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazin_cvetovDataSet3.xss">
+      <DependentUpon>Magazin_cvetovDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet4.xsc">
+      <DependentUpon>Magazin_cvetovDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Magazin_cvetovDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Magazin_cvetovDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Magazin_cvetovDataSet4.xss">
+      <DependentUpon>Magazin_cvetovDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sdelka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokupka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Workers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="flower.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
