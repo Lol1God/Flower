@@ -71,6 +71,7 @@ namespace Kyrsach.Forms.FormPokupateli
             prov = !prov;
         }
 
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (prov == true)
